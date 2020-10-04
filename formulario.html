@@ -13,7 +13,7 @@
   <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i> IGF/PRN</a>
+      <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>VG18011</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,8 +36,12 @@
     <!-- Contenido de la página -->
     <div class="container">
       <h1>Formulario</h1>
+      <div class = "card">
+        <div class= "card-header">
+          <h5>Información del Estudiante</h5>
       <small class="text-danger">* Obligatorio</small>
-
+    </div>
+    <div class="card-body">
       <form id="formEstudiante" action="" method="GET">
         <div class="form-row">
           <!-- Nombre -->
@@ -54,8 +58,13 @@
         </div>
          
         <div class="form-row">
+           <!-- Carnet -->
+           <div class="form-group col-md-4">
+            <label for="carnet">Carnet: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Carnet" id="carnet" name="carnet">
+          </div>
           <!-- Carrera -->
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
             <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
             <select class="form-control" name="carrera" id="carrera">
               <option value="" disabled selected>Seleccione una carrera</option>
@@ -64,9 +73,9 @@
               <option value="ingElectrica">Ing. Eléctrica</option>
             </select>
           </div>
-
+          
           <!-- Sexo -->
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
             <label for="sexo">Sexo: <span class="text-danger">*</span></label>
 
             <div>
@@ -84,7 +93,9 @@
             </div>                  
           </div>         
         </div>
-
+      </div>
+    
+    <div class = "card-footer">
         <div class="float-right">
            <!-- Botón de limpiar -->
           <button id="btnLimpiar" class="btn btn-outline-dark" type="button">Limpiar</button>
@@ -94,6 +105,7 @@
         </div>       
       </form>
     </div>    
+  </div>
 
     <!-- Scripts js -->
     <!-- jQuery library -->
